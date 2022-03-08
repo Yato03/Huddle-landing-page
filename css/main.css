@@ -1,0 +1,171 @@
+body{
+    padding: 0;
+    margin: 0;
+    background-color:  hsl(257, 40%, 49%);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+a{
+    text-decoration: none;
+}
+
+@media screen and (min-device-width:1440px){
+    body{
+        background-image: url('../images/bg-desktop.svg');
+        background-position: 1% 1%;
+        background-repeat: no-repeat;
+        background-size: 1600px;
+    }
+    main{
+        flex-wrap: nowrap;
+    }
+    main .main-left{
+        margin-left: 5rem;
+    }
+    main .main-right{
+        margin-left: 5rem;
+    }
+    main .main-right h1{
+        font-size: 50px; 
+    }
+    main .main-right p{
+        font-size: 1.5rem; 
+        padding-right: 3.5em;
+    }
+}
+@media screen and (min-device-width:375px) and (max-device-width:1439px){
+    body{
+        background-image: url('../images/bg-mobile.svg');
+        background-repeat: no-repeat;
+        background-position: center 0.2%;
+        background-size: 100%;
+    }
+    main{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    main .main-left{
+        margin-left: 0;
+    }
+    main .main-right{
+        margin-left: 0;
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        flex-wrap: wrap;
+    }
+    main .main-right h1{
+        font-size: 3.5rem; 
+        text-align: center;
+        margin-top: 8rem;
+    }
+    main .main-right p{
+        font-size: 2rem; 
+        padding-left: 2.5rem;
+        padding-right: 2.5rem;
+        text-align: center;
+    }
+}
+
+header{
+    margin: 5%;
+}
+
+main{
+    display: flex;
+}
+main .main-left{
+    justify-self: flex-start;
+}
+main .main-left img{
+    width: auto;
+}
+main .main-right{
+    justify-self: flex-end;
+}
+main .main-right h1{
+    color: white;
+    font-family: "Poppins";
+}
+main .main-right p{
+    color: #e5d0ff;
+    font-family: "Open sans";
+}
+main .main-right a{
+    color :hsl(257, 40%, 49%);
+    font-family: "Poppins";
+    font-size: 2rem;
+    position: relative;
+    top: 20%;
+}
+
+main .main-right .button-register{
+    background-color: white;
+    width: 20rem;
+    height: 5rem;
+    text-align: center;
+    justify-self: center;
+    border-radius: 100px;
+    box-shadow: 3px 4px 10px #20212447;
+}
+    
+main .main-right .button-register:hover{
+    background-color: #e4e4e4;
+    width: 20rem;
+    height: 5rem;
+    text-align: center;
+    justify-self: center;
+    border-radius: 100px;
+    box-shadow: 3px 4px 10px #3b3d42;
+    border-color: #dfe1e500;
+    cursor: pointer;
+}
+
+footer{
+    width: 100%;
+    height: 100px;
+    position: absolute;
+    bottom: 0;
+    color: #5f6368;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+}
+
+footer .footer-icons{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    width: inherit;
+    height: inherit;
+    justify-self: right;
+}
+footer .footer-icons ul li{
+    width: 5rem;
+    height: 5rem;
+}
+footer .facebook-icon{
+    background-image: url('images/logo-facebook.svg');
+    background-repeat: no-repeat;
+    background-size: 5rem;
+    background-color: ivory;
+    border-radius: 100%;
+}
+
+footer .twitter-icon{
+    background-image: url('images/logo-twitter.svg');
+    background-repeat: no-repeat;
+    background-size: 5rem;
+    background-color: ivory;
+    border-radius: 100%;
+}
+footer .instagram-icon{
+    background-image: url('images/logo-instagram.svg');
+    background-repeat: no-repeat;
+    background-size: 5rem;
+    background-color: ivory;
+    border-radius: 100%;
+}
